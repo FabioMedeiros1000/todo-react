@@ -5,7 +5,7 @@ Este é um projeto de Todo List desenvolvido em React, criado utilizando o `crea
 ## Funcionalidades
 
 - **Criação de Tarefas:** 
-  - Um botão "Criar Tarefa" permite adicionar novas tarefas à lista.
+  - Um botão "Criar Tarefa" (representado por um "+" no canto inferior direito da tela) permite adicionar novas tarefas à lista.
   
 - **Edição de Tarefas:** 
   - Cada tarefa possui um botão "Editar" que permite alterar a descrição da tarefa. Ao clicar em "Editar", os botões "Salvar" e "Cancelar" substituem os botões padrão, permitindo salvar as alterações ou cancelar a edição.
