@@ -1,46 +1,29 @@
-# Getting Started with Create React App
+# Todo List com React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto de Todo List desenvolvido em React, criado utilizando o `create-react-app`. O objetivo deste projeto é gerenciar tarefas, permitindo criar, editar, remover e filtrar tarefas de acordo com diferentes critérios.
 
-## Available Scripts
+## Funcionalidades
 
-In the project directory, you can run:
+- **Criação de Tarefas:** 
+  - Um botão "Criar Tarefa" (representado por um "+" no canto inferior direito da tela) permite adicionar novas tarefas à lista.
+  
+- **Edição de Tarefas:** 
+  - Cada tarefa possui um botão "Editar" que permite alterar a descrição da tarefa. Ao clicar em "Editar", os botões "Salvar" e "Cancelar" substituem os botões padrão, permitindo salvar as alterações ou cancelar a edição.
 
-### `npm start`
+- **Remoção de Tarefas:** 
+  - Cada tarefa possui um botão "Remover" que permite excluir a tarefa da lista.
+  
+- **Filtros:** 
+  - As tarefas podem ser filtradas por **status** (pendente ou concluída) e por **prioridade** (normal, urgente, importante).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Etiquetas:** 
+  - Cada tarefa exibe etiquetas que indicam seu status e prioridade.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Tecnologias Utilizadas
 
-### `npm test`
+- **React:** Biblioteca JavaScript para a construção de interfaces de usuário.
+- **Create React App:** Ferramenta para a criação de novos projetos React com configuração mínima.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Demonstração da aplicação
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+[Demo](https://todo-react-peach-three.vercel.app/)
