@@ -9,10 +9,3 @@ export const Aside = styled.aside`
     display: none;
   }
 `
-
-export const Filtros = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 8px;
-  margin-top: 16px;
-`

@@ -32,10 +32,3 @@ export const HamburguerContent = styled.div`
     margin-top: 8px;
   }
 `
-
-export const Filtros = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 8px;
-  margin-top: 8px;
-`
