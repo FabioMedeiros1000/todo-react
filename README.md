@@ -2,6 +2,8 @@
 
 Este é um projeto de Todo List desenvolvido em React, criado utilizando o `create-react-app`. O objetivo deste projeto é gerenciar tarefas, permitindo criar, editar, remover e filtrar tarefas de acordo com diferentes critérios.
 
+![Imagem do todo-react](./todo-react.png)
+
 ## Funcionalidades
 
 - **Criação de Tarefas:** 
