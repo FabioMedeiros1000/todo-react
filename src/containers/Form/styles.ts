@@ -13,7 +13,7 @@ export const Form = styled.form`
   }
 `
 
-export const Opcoes = styled.div`
+export const Options = styled.div`
   margin-bottom: 16px;
 
   p {
@@ -25,7 +25,7 @@ export const Opcoes = styled.div`
   }
 `
 
-export const Opcao = styled.div`
+export const Option = styled.div`
   display: inline;
   text-transform: capitalize;
 `

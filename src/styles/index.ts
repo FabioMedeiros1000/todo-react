@@ -1,7 +1,7 @@
 import styled, { createGlobalStyle } from 'styled-components'
-import variaveis from './variaveis'
+import variables from './variables'
 
-const EstiloGlobal = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
   * {
   margin: 0;
   padding: 0;
@@ -26,7 +26,7 @@ export const MainContainer = styled.main`
   overflow-y: scroll;
 `
 
-export const Titulo = styled.h2`
+export const Title = styled.h2`
   display: block;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -34,7 +34,7 @@ export const Titulo = styled.h2`
   font-weight: bold;
 `
 
-export const Campo = styled.input`
+export const Input = styled.input`
   padding: 8px;
   background-color: #fff;
   border-radius: 8px;
@@ -44,20 +44,20 @@ export const Campo = styled.input`
   width: 100%;
 `
 
-export const Botao = styled.button`
+export const Button = styled.button`
   font-weight: bold;
   font-size: 12px;
   color: #fff;
   padding: 8px 12px;
   border: none;
   cursor: pointer;
-  background-color: ${variaveis.azulEscuro};
+  background-color: ${variables.darkBlue};
   border-radius: 8px;
   margin-right: 8px;
 `
 
-export const BotaoSalvar = styled(Botao)`
-  background-color: ${variaveis.verde};
+export const SaveButton = styled(Button)`
+  background-color: ${variables.green};
 `
 
-export default EstiloGlobal
+export default GlobalStyle

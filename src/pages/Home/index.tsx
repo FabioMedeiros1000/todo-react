@@ -1,14 +1,14 @@
-import BotaoAdicionar from '../../components/BotaoAdicionar'
-import HamburguerMenu from '../../components/HamburguerMenu'
-import BarraLateral from '../../containers/BarraLateral'
-import ListaDeTarefas from '../../containers/ListaDeTarefas'
+import AddButton from '../../components/AddButton'
+import HamburgerMenu from '../../components/HamburgerMenu'
+import Sidebar from '../../containers/Sidebar'
+import TasksList from '../../containers/TasksList'
 
 const Home = () => (
   <>
-    <BarraLateral mostrarFiltros />
-    <HamburguerMenu mostrarFiltros />
-    <ListaDeTarefas />
-    <BotaoAdicionar />
+    <Sidebar showFilters />
+    <HamburgerMenu showFilters />
+    <TasksList />
+    <AddButton />
   </>
 )
 

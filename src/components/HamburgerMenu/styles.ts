@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Campo } from '../../styles'
+import { Input } from '../../styles'
 
 export const Container = styled.div`
   display: none;
@@ -15,7 +15,7 @@ export const Container = styled.div`
   }
 `
 
-export const HamburguerContent = styled.div`
+export const HamburgerContent = styled.div`
   width: 100%;
   max-height: 0;
   opacity: 0;
@@ -28,7 +28,7 @@ export const HamburguerContent = styled.div`
     transform: translateY(0);
   }
 
-  ${Campo} {
+  ${Input} {
     margin-top: 8px;
   }
 `

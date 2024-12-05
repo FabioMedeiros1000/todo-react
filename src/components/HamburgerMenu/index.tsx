@@ -1,30 +1,34 @@
 import { useState, useRef, useEffect } from 'react'
-import { Fade as Hamburguer } from 'hamburger-react'
-import { Container, HamburguerContent } from './styles'
-import { Botao, Campo } from '../../styles'
 import { useDispatch, useSelector } from 'react-redux'
-import { RootReducer } from '../../store'
-import { alterarTermo } from '../../store/reducers/filtro'
+import { Fade as Hamburger } from 'hamburger-react'
 import { useNavigate } from 'react-router-dom'
-import Filtros from '../../containers/Filtros'
+
+import Filters from '../../containers/Filters'
+
+import { RootReducer } from '../../store'
+import { changeName } from '../../store/reducers/filter'
+
+import * as S from './styles'
+
+import { Button, Input } from '../../styles'
 
 type Props = {
-  mostrarFiltros: boolean
+  showFilters: boolean
 }
 
-const HamburguerMenu = ({ mostrarFiltros }: Props) => {
+const HamburgerMenu = ({ showFilters }: Props) => {
   const [isOpen, setOpen] = useState(false)
-  const filtrosRef = useRef<HTMLDivElement>(null)
+  const filtersRef = useRef<HTMLDivElement>(null)
 
-  const { termo } = useSelector((state: RootReducer) => state.filtro)
+  const { name } = useSelector((state: RootReducer) => state.filter)
   const dispatch = useDispatch()
   const navigate = useNavigate()
 
   useEffect(() => {
     const handleClickInFilter = (event: MouseEvent) => {
       if (
-        filtrosRef.current &&
-        filtrosRef.current.contains(event.target as Node)
+        filtersRef.current &&
+        filtersRef.current.contains(event.target as Node)
       ) {
         setOpen(false)
       }
@@ -42,10 +46,10 @@ const HamburguerMenu = ({ mostrarFiltros }: Props) => {
   }, [isOpen])
 
   return (
-    <Container>
-      {mostrarFiltros ? (
+    <S.Container>
+      {showFilters ? (
         <>
-          <Hamburguer
+          <Hamburger
             rounded
             easing="ease-in"
             duration={0.3}
@@ -56,23 +60,23 @@ const HamburguerMenu = ({ mostrarFiltros }: Props) => {
             label="Show menu"
             hideOutline={false}
           />
-          <HamburguerContent className={isOpen ? 'is-open' : ''}>
-            <Campo
+          <S.HamburgerContent className={isOpen ? 'is-open' : ''}>
+            <Input
               type="text"
               placeholder="Buscar"
-              value={termo}
-              onChange={(evento) => dispatch(alterarTermo(evento.target.value))}
+              value={name}
+              onChange={(event) => dispatch(changeName(event.target.value))}
             />
-            <div ref={filtrosRef}>
-              <Filtros nCols={3} />
+            <div ref={filtersRef}>
+              <Filters nCols={3} />
             </div>
-          </HamburguerContent>
+          </S.HamburgerContent>
         </>
       ) : (
-        <Botao onClick={() => navigate('/')}>Voltar a lista de tarefas</Botao>
+        <Button onClick={() => navigate('/')}>Voltar a lista de tarefas</Button>
       )}
-    </Container>
+    </S.Container>
   )
 }
 
-export default HamburguerMenu
+export default HamburgerMenu
