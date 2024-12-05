@@ -19,6 +19,9 @@ Este é um projeto de Todo List desenvolvido em React, criado utilizando o `crea
 - **Etiquetas:** 
   - Cada tarefa exibe etiquetas que indicam seu status e prioridade.
 
+- **Menu Hamburguer:** 
+  - Um menu hamburguer foi adicionado para melhorar a experiência do usuário em dispositivos móveis, permitindo fácil acesso às funcionalidades principais.
+
 ## Tecnologias Utilizadas
 
 - **React:** Biblioteca JavaScript para a construção de interfaces de usuário.
